@@ -1,3 +1,4 @@
 *long_sentence*
 *.DS_Store
 !long_sentence_abstrative_summary.ipynb
+!long_sentence_head_tail_512win_para.ipynb
