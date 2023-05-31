@@ -25,19 +25,19 @@ Newly trained model along with the newly trained tokenizer are ready to be used
  - ### 1.3.2. Custom functions for the logic
       - #### Extracting Summary (Abstractive vs Extractive)
         This is an optional step only there for summarization logics, we use text rank and entity based text ranking, 2 approaches with each having its pros and cons.
-        -  ##### [Abstractive Summary](longer%20text%20research/long_sentence_abstrative_summary.ipynb)
+        -  ##### [Abstractive Summary](long_sentence_abstrative_summary.ipynb)
             The abstractive summary is the exisiting approach currently deployed in production. We use summa library to generate the summary of text.
-        -  ##### [Extractive Summary](longer%20text%20research/long_sentence_textrank.ipynb)
+        -  ##### [Extractive Summary](long_sentence_textrank.ipynb)
             The extractive summary, is the summary generated using textranking algorithm i.e. top-n sentences in the text. The approach can be further drilled down into top n sentences in text v/s top n entity based sentences. 
       - #### Generate 512 token Window Large text
         This is an optional step for large/complete text. We create input of 512 token (multiple windows for sliding window, one for head and tail)
-        -  ##### [Head + Tail sentence](longer%20text%20research/long_sentence_head_tail_sent.ipynb)
+        -  ##### [Head + Tail sentence](long_sentence_head_tail_sent.ipynb)
             The apprach uses the head and tail of the text i.e. 128 tokens from starting + 382 tokens from tail. The logic behind this approach is that main context of the article is either talked/introduced in starting and summarized in the end. After this we go sentence by sentence through this paragraph. 
-        -  ##### [Head + Tail paragraph](longer%20text%20research/long_sentence_head_tail_512win_para.ipynb)
+        -  ##### [Head + Tail paragraph](long_sentence_head_tail_512win_para.ipynb)
             This approach same as before other than the fact we feed entire 512 token to sentiment model to compute the score.  
-        -  ##### [512 Token Window sentence](longer%20text%20research/long_sentence_new_model_sent.ipynb)
+        -  ##### [512 Token Window sentence](long_sentence_new_model_sent.ipynb)
             This approach requires breaking large text into paragraphs of 512 tokens and then passing them throughsentiment model.  
-        -  ##### [512 Token Window paragraph](longer%20text%20research/long_sentence_new_model_512win.ipynb)
+        -  ##### [512 Token Window paragraph](long_sentence_new_model_512win.ipynb)
             Same approach as before but we go paragraph wise paragraph*  
 
  - ### 1.3.3. Compute Sentiment
