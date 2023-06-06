@@ -2,3 +2,6 @@
 *.DS_Store
 !long_sentence_abstrative_summary.ipynb
 !long_sentence_head_tail_512win_para.ipynb
+!long_sentence_head_tail_sent.ipynb
+!long_sentence_new_model_512win.ipynb
+!long_sentence_new_model_sent.ipynb
