@@ -16,7 +16,7 @@ The focus of this research was to identify the best way to process long text for
 - `Proposed Logic` : Iterating over sentences in summary/complete text computing sentiments based on what logic needs to be implemented as per the following flowchart
 
 ## 1.1. Define the approach: new model + {logic for long text}
-We load the newly finetuned model available to us [Here](#step-6-fine-tuning-and-training-the-model). For long text we need to define the approach we gonna follow. based on that there are 6 notebooks corresponding to 6 logics proposed to handle large text
+We load the newly finetuned model available to us or use the pretrained from Huggingface library. For long text we need to define the approach we gonna follow. based on that there are 6 notebooks corresponding to 6 logics proposed to handle large text
 ## 1.2. Load the newly finetuned - trained model
 Newly trained model along with the newly trained tokenizer are ready to be used
 ## 1.3. NLP AI - Pipeline functions:
